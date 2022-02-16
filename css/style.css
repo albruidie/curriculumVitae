@@ -52,7 +52,6 @@
   box-sizing: border-box;
   outline: none; border:none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all .2s linear;
 }
 
@@ -121,8 +120,8 @@ html::-webkit-scrollbar-thumb{
   font-size: 20px;
 }
 
-.container .profile p{
-  color:green);
+.container .profile p {
+  color:green;
   padding:5px 0;
   margin-bottom: 10px;
   font-size: 15px;
