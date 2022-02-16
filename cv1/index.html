@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img id="photo" src="images/foto-perfil.jpg" alt="">
+        <h3>Alba Ruiz Díez </h3>
+        <p>Ambientóloga, Analista SIG</p>
+        <div class="share">
+            <a href="https://twitter.com/?lang=es" target="_blanck" class="fab fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/alba-ruiz-diez/" target="_blanck" class="fab fa-linkedin"></a>
+        </div>
+        <div>
+            <button class="btn"   id="button" onclick="descarga()">Imprime mi CV</button>
+        </div>
+    </div>
+
+    <div class="information">
+        <div class="info">
+            <h3 class="title">Presentación</h3>
+            <p id="info">Hola, soy una chica graduada en Ciencias Ambientales, con Máster en Gestión del Territorio y en Sistemas de Información Geográfica aplicados al Medio Ambiente. Estudiante de Doctorado en Geografía. Últimos dos años centrada en el análisis de las energías renovables, en al ámbito del impacto visual y paisajístico y sus relaciones sinérgicas dentro de las Evaluaciones de Impacto Ambiental.</p>
+            <br>
+        </div>   
+        <div class="studies"> 
+            <h3 class="title">Formación</h3>
+            <div class="box-container">
+                <div class="box">
+                    <span>2012 - 2017</span>
+                    <h4>Grado en Ciencias ambientales</h4>
+                    <p>Universidad de Granda.</p>
+                </div>
+                <div class="box">
+                    <span>2017 - 2018</span>
+                    <h4>Máster Gestión del Territorio, Instrumentos y Técnicas de Intervención</h4>
+                    <p>Especialidad: Gestión Ambiental y Planeamiento Urbanístico.</p>
+                    <p>Universida de Sevilla.</p>
+                </div>
+                <div class="box">
+                    <span>2018 - 2019</span>
+                    <h4>Máster en Sistemas de Información Geográfica: Planificación, Ordenación Territorial y Medio Ambiente</h4>
+                    <p>Universidad de Sevilla.</p>
+                </div>
+                <div class="box">
+                    <span>2021 - 2022</span>
+                    <h4>Máster GIS</h4>
+                    <p>Esri España. Madrid</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="services">
+            <h3 class="title">Mis Especialidades</h3>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/arcgispro.jfif" alt="">
+                    <h3>ArcGIS Pro</h3>
+                </div>
+                <div class="box">
+                    <img src="images/1200px-QGIS_logo_new.svg.png" alt="">
+                    <h3>QGIS</h3>
+                </div>
+                <div class="box">
+                    <img src="https://e7.pngegg.com/pngimages/761/45/png-clipart-professional-python-programmer-computer-programming-android-android-blue-logo.png" alt="">
+                    <h3>Python</h3>
+                </div>
+                <div class="box">
+                    <img src="images/icon-3.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="box">
+                    <img src="images/icon-1.png" alt="">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="box">
+                    <img src="images/icon-2.png" alt="">
+                    <h3>CSS3</h3>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h3 class="title">Destrezas</h3>
+            <div class="box-container">
+                <div class="box">
+                    <div class="progress">
+                        <h3>SQL <span>95%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>JavaScript <span>60%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>HTML <span>60%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="progress">
+                        <h3>Análisis geo-espacial <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Generación cartográfica <span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Evaluación ambiental <span>95%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Diseño bases de datos  <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <h3 class="title">my experience</h3>
+            <div class="box-container">
+                <div id="exp1" class="box" onmouseover="change('dentro')" onmouseout="change('fuera')">
+                    <span>2018</span>
+                    <h3>Instituto de Estadística y Cartografía de Andalucía</h3>
+                    <p>Prácticas académicas.Elaboración de redes para proyecto piloto de análisis de accesibilidad de la población andaluza a los centros de salud públicos .</p>
+                </div>
+                <div id="exp2" class="box" onmouseover="change('dentro')" onmouseout="change('fuera')" >
+                    <span>2019 - actualidad</span>
+                    <h3>Laboratorio Europeo de Ciencias Sociales</h3>
+                    <p>Investigadora proyectos TERRYER y PEARLS. Paisaje de las energías renovables. Responsable de análisis espaciales y producción cartográfica</p>
+                </div>
+                <div id="exp3" class="box" onmouseover="change('dentro')" onmouseout="change('fuera')">
+                    <span>2020 - actualidad</span>
+                    <h3>Territoria. Análisis y Gestión Ambiental</h3>
+                    <p>Directora de análisis de datos y gestión del territorio.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contact">
+            <h3 class="title">contact info</h3>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <div class="info">
+                        <h3>Localización</h3>
+                        <p>Aranda de Duero - Burgos, 09400</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>Teléfono</h3>
+                        <p>673907694</p>
+                        
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>Correo de contacto</h3>
+                        <p>albi.40315@gmail.com</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
